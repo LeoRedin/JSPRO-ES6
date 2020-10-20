@@ -1,0 +1,272 @@
+import {themes} from 'mdx-deck'
+import Code from 'mdx-code'
+
+export const theme = themes.comic
+
+# JS PRO
+
+## Próximos passos:
+
+- ES6
+- Let statement [1-3]
+- Const statement [4]
+- Template Literals [5-9]
+- Arrow function [10-15]
+
+---
+
+# LET
+
+## let permite criar variáveis com escopo de bloco
+
+```javascript
+let myVar = 'Some value'
+let anyNumber = Math.random()
+let iAmTrue = true
+let emptyObj = {}
+let emptyArray = []
+```
+
+---
+
+# LET
+
+## Então qual a diferença pro var?
+
+<Code>
+
+
+```js
+var greeting = 'Olá!'
+console.log(greeting)
+
+greeting = 'Olá aqui de baixo'
+console.log(greeting)
+
+var greeting = 'Posso usar var de novo'
+console.log(greeting)
+```
+
+</Code>
+
+
+---
+
+# LET
+
+## Lembra do escopo em bloco?
+
+<div style={{overflowY: 'scroll'}}>
+
+
+<Code>
+
+
+```js
+var firstName = 'Leonardo'
+
+if (true) {
+  var lastName = 'Redin'
+}
+
+var fullName = firstName + ' ' + lastName
+
+console.log(fullName)
+```
+
+</Code>
+
+
+</div>
+
+
+---
+
+# CONST
+
+<p style={{padding: '2rem', textAlign: 'center'}}>
+  Declarar uma <b>const</b> cria um valor que é uma referência de{' '}
+  <b>somente leitura.</b>
+  <br />
+  Ela pode ser tanto global ou local a função ou bloco em que foi definida.
+  <br />
+  Dessa forma ela deve ser <b>obrigatoriamente</b> inicializada.
+</p>
+
+---
+
+# CONST
+
+<Code>
+
+
+```js
+const firstName = 'Leonardo'
+
+//erro firstName = 'Redin'
+
+//péssima prática já que não conseguimos alterar o valor
+const lastName
+
+console.log(lastName)
+```
+
+</Code>
+
+
+---
+
+# Template Literals
+
+<p style={{padding: '2rem', textAlign: 'center'}}>
+  Template literals são usadas com as aspas(` `) ao invés de ' ' ou " "
+  <br />
+  Elas podem conter expressões JS dentro.
+  <br />
+  Todas as partes, incluindo o resultado dessa(s) expressão(ões) são
+  concatenadas e viram uma única string
+</p>
+
+---
+
+# Template Literals
+
+<Code>
+
+
+```js
+const myName = 'Leonardo'
+const myLastName = 'Redin'
+
+const fullName = `Meu nome completo é: ${myName} ${myLastName}`
+
+console.log(fullName)
+```
+
+</Code>
+
+
+---
+
+# Template Literals
+
+<Code>
+
+
+```js
+const arrayOfNames = ['Leonardo', 'Redin']
+
+const fullName = `Nome completo: ${arrayOfNames.join(' ')}`
+
+console.log(fullName)
+```
+
+</Code>
+
+
+---
+
+# Template Literals
+
+<Code>
+
+
+```js
+const myName = `Meu nome é: ${(function () {
+  const first = 'Leonardo'
+  const last = 'Redin'
+
+  return `${first} ${last}`
+})()}`
+
+console.log(myName)
+```
+
+</Code>
+
+
+---
+
+# Arrow functions
+
+<p style={{padding: '2rem', textAlign: 'center'}}>
+  Arrow function é uma maneira diferente de se declarar uma Function Expression.
+  <br />
+  Isso implica em uma grande mudança: o escopo do 'this'.
+  <br />
+  Representada pelo sinal de '=>'
+</p>
+
+---
+
+# Arrow functions
+
+<Code>
+
+
+```js
+// ES5
+var es5Func = function () {
+  return 'whatever'
+}
+
+// ES6
+
+const es6Func = () => 'whatever'
+```
+
+</Code>
+
+
+---
+
+# Arrow functions
+
+## ES6
+
+- menos código
+- sem a necessidade da palavra function
+- () são opcionais às vezes
+- retorno implícito sem as chaves {}
+
+---
+
+# Arrow functions
+
+## Diferentes maneiras declarar arrow functions
+
+---
+
+# Arrow functions
+
+## 1 parâmetro
+
+<Code>
+
+
+```javascript
+let quadrado
+
+quadrado = (num) => num * num
+quadrado = (num) => {
+  return num * num
+}
+```
+
+</Code>
+
+---
+
+# Arrow functions
+
+## 2 ou mais parâmetros
+
+<Code>
+
+```javascript
+let multiply
+
+multiply = (x, y) => x * y
+```
+
+</Code>
