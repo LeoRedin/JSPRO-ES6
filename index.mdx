@@ -1,7 +1,7 @@
 import {themes} from 'mdx-deck'
 import Code from 'mdx-code'
 
-export const theme = themes.comic
+export const theme = themes.code
 
 # JS PRO
 
@@ -12,6 +12,7 @@ export const theme = themes.comic
 - Const statement [4]
 - Template Literals [5-9]
 - Arrow function [10-15]
+- Spread Operator [16-X]
 
 ---
 
@@ -255,6 +256,7 @@ quadrado = (num) => {
 
 </Code>
 
+
 ---
 
 # Arrow functions
@@ -263,6 +265,7 @@ quadrado = (num) => {
 
 <Code>
 
+
 ```javascript
 let multiply
 
@@ -270,3 +273,124 @@ multiply = (x, y) => x * y
 ```
 
 </Code>
+
+
+---
+
+# Spread operator
+
+<p style={{padding: '2rem', textAlign: 'center'}}>
+  A sintaxe de propagação (Spread) permite que um objeto iterável, como um array
+  ou string, seja expandida em locais onde zero ou mais argumentos (para
+  chamadas de função) ou elementos (para literais de array) sejam esperados ou
+  uma expressão de objeto seja expandida em locais onde zero ou mais pares de
+  chave-valor (para literais de objeto) são esperados. (MDN)
+</p>
+
+---
+
+# Spread Operator - Arrays
+
+<Code>
+
+
+```js
+const pokemons = ['Bulbasaur', 'Charmander', 'Squirtle']
+
+console.log(pokemons)
+
+console.log(...pokemons)
+```
+
+</Code>
+
+
+---
+
+# Spread Operator - Arrays
+
+<Code>
+
+
+```js
+const firstGen = ['Bulbasaur', 'Charmander', 'Squirtle']
+
+const secondGen = ['Chikorita', 'Cyndaquil', 'Totodile']
+
+const joined = firstGen.concat(secondGen) // retorna um novo array
+```
+
+</Code>
+
+
+---
+
+# Spread Operator - Arrays
+
+## ES6
+
+<Code>
+
+
+```js
+const firstGen = ['Bulbasaur', 'Charmander', 'Squirtle']
+
+const secondGen = ['Chikorita', 'Cyndaquil', 'Totodile']
+
+const joined = [...firstGen, ...secondGen]
+
+console.log(joined)
+```
+
+</Code>
+
+
+---
+
+# Spread Operator - Functions
+
+<Code>
+
+
+```js
+const firstGen = [1, 4, 7]
+
+const secondGen = [2, 5, 8]
+
+function add(num1, num2, num3) {
+  const result = num1 * num2 * num3
+  console.log(result)
+}
+
+add(firstGen[0], firstGen[1], firstGen[2])
+add(secondGen[0], secondGen[1], secondGen[2])
+```
+
+</Code>
+
+
+---
+
+# Spread Operator - Functions
+
+## ES6
+
+<Code>
+
+
+```js
+const firstGen = [1, 4, 7]
+
+const secondGen = [2, 5, 8]
+
+function add(num1, num2, num3) {
+  const result = num1 * num2 * num3
+  console.log(result)
+}
+
+add(...firstGen)
+add(...secondGen)
+```
+
+</Code>
+
