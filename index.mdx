@@ -13,7 +13,9 @@ export const theme = themes.code
 - Template Literals [5-9]
 - Arrow function [10-15]
 - Spread Operator [16-21]
-- Projeto 1 [22]
+- DOM [22-24]
+- Eventos [25]
+- Projeto 1 [26]
 
 ---
 
@@ -395,16 +397,78 @@ add(...secondGen)
 
 </Code>
 
+
+---
+
+# DOM (Document Object Model)
+
+<p style={{padding: '2rem', textAlign: 'center'}}>
+  O Modelo de Objeto de Documento (DOM) é uma interface de programação para
+  documentos HTML, XML e SVG . Ele fornece uma representação estruturada do
+  documento como uma árvore. O DOM define métodos que permitem acesso à árvore,
+  para que eles possam alterar a estrutura, estilo e conteúdo do documento. O
+  DOM fornece uma representação do documento como um grupo estruturado de nós e
+  objetos, possuindo várias propriedades e métodos. Os nós também podem ter
+  manipuladores de eventos que lhe são inerentes, e uma vez que um evento é
+  acionado, os manipuladores de eventos são executados. Essencialmente, ele
+  conecta páginas web a scripts ou linguagens de programação. (MDN)
+</p>
+
+---
+
+# DOM - Window Object
+
+```js
+console.log(window.innerWidth)
+console.log(outerWidth)
+console.log(innerHeight)
+console.log(outerHeight)
+console.log(window)
+localStorage e sessionStorage
+document
+location
+```
+
+---
+
+# DOM - Document
+
+## Vamos para o codesandbox :)
+
+- title
+- children
+- como modificar o próprio DOM
+- adicionando estilos
+- pegando os elementos do DOM
+- criando elementos com JS
+- inserindo novos elementos no DOM
+- deletar elementos
+
+---
+
+# Eventos
+
+## Vamos para o codesandbox :)
+
+```js
+window.onload
+onclick
+eventListener
+target
+```
+
 ---
 
 # Projeto 1 - TODO App
 
 ### Funcinalidades:
 
-* Criar um TODO
-* Deletar um TODO
-* Limpar a lista
-* Buscar TODO
-* Remover espaços em branco das tarefas
-* Limpar formulário após submissão
-* Não permitir tarefa em branco
+- Criar um TODO
+- Deletar um TODO
+- Limpar a lista
+- Buscar TODO
+- Remover espaços em branco das tarefas
+- Limpar formulário após submissão
+- Não permitir tarefa em branco
+
+
