@@ -16,6 +16,8 @@ export const theme = themes.code
 - DOM [22-24]
 - Eventos [25]
 - Projeto 1 [26]
+- Requisições HTTP [27]
+- Projeto 2 [28]
 
 ---
 
@@ -433,8 +435,6 @@ location
 
 # DOM - Document
 
-## Vamos para o codesandbox :)
-
 - title
 - children
 - como modificar o próprio DOM
@@ -443,6 +443,25 @@ location
 - criando elementos com JS
 - inserindo novos elementos no DOM
 - deletar elementos
+
+---
+
+# DOM
+
+```javascript
+const title = document.title
+const children = document.children
+document.title = 'Escolha um título'
+const h1 = `
+  <h1>
+    Olá Target
+  </h1>
+`
+
+const app = document.getElementById('app')
+
+app.innerHTML = h1
+```
 
 ---
 
@@ -469,3 +488,17 @@ location
 - Limpar formulário após submissão
 - Não permitir tarefa em branco
 - Persistir dados usando localStorage (Bônus)
+
+---
+
+# HTTP Requests
+
+## Vamos para o codesandbox :)
+
+- Tipos de requisições
+- GET / POST
+- Fetch API
+
+---
+
+# Projeto 2 - App de Clima
