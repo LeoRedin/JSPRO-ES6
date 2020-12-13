@@ -41,9 +41,6 @@ let emptyArray = []
 
 ## Então qual a diferença pro var?
 
-<Code>
-
-
 ```js
 var greeting = 'Olá!'
 console.log(greeting)
@@ -55,9 +52,6 @@ var greeting = 'Posso usar var de novo'
 console.log(greeting)
 ```
 
-</Code>
-
-
 ---
 
 # LET
@@ -65,9 +59,6 @@ console.log(greeting)
 ## Lembra do escopo em bloco?
 
 <div style={{overflowY: 'scroll'}}>
-
-
-<Code>
 
 
 ```js
@@ -81,9 +72,6 @@ var fullName = firstName + ' ' + lastName
 
 console.log(fullName)
 ```
-
-</Code>
-
 
 </div>
 
@@ -105,9 +93,6 @@ console.log(fullName)
 
 # CONST
 
-<Code>
-
-
 ```js
 const firstName = 'Leonardo'
 
@@ -118,9 +103,6 @@ const lastName
 
 console.log(lastName)
 ```
-
-</Code>
-
 
 ---
 
@@ -139,9 +121,6 @@ console.log(lastName)
 
 # Template Literals
 
-<Code>
-
-
 ```js
 const myName = 'Leonardo'
 const myLastName = 'Redin'
@@ -151,15 +130,9 @@ const fullName = `Meu nome completo é: ${myName} ${myLastName}`
 console.log(fullName)
 ```
 
-</Code>
-
-
 ---
 
 # Template Literals
-
-<Code>
-
 
 ```js
 const arrayOfNames = ['Leonardo', 'Redin']
@@ -169,15 +142,9 @@ const fullName = `Nome completo: ${arrayOfNames.join(' ')}`
 console.log(fullName)
 ```
 
-</Code>
-
-
 ---
 
 # Template Literals
-
-<Code>
-
 
 ```js
 const myName = `Meu nome é: ${(function () {
@@ -189,9 +156,6 @@ const myName = `Meu nome é: ${(function () {
 
 console.log(myName)
 ```
-
-</Code>
-
 
 ---
 
@@ -209,9 +173,6 @@ console.log(myName)
 
 # Arrow functions
 
-<Code>
-
-
 ```js
 // ES5
 var es5Func = function () {
@@ -222,9 +183,6 @@ var es5Func = function () {
 
 const es6Func = () => 'whatever'
 ```
-
-</Code>
-
 
 ---
 
@@ -249,9 +207,6 @@ const es6Func = () => 'whatever'
 
 ## 1 parâmetro
 
-<Code>
-
-
 ```javascript
 let quadrado
 
@@ -261,26 +216,17 @@ quadrado = (num) => {
 }
 ```
 
-</Code>
-
-
 ---
 
 # Arrow functions
 
 ## 2 ou mais parâmetros
 
-<Code>
-
-
 ```javascript
 let multiply
 
 multiply = (x, y) => x * y
 ```
-
-</Code>
-
 
 ---
 
@@ -298,9 +244,6 @@ multiply = (x, y) => x * y
 
 # Spread Operator - Arrays
 
-<Code>
-
-
 ```js
 const pokemons = ['Bulbasaur', 'Charmander', 'Squirtle']
 
@@ -309,15 +252,9 @@ console.log(pokemons)
 console.log(...pokemons)
 ```
 
-</Code>
-
-
 ---
 
 # Spread Operator - Arrays
-
-<Code>
-
 
 ```js
 const firstGen = ['Bulbasaur', 'Charmander', 'Squirtle']
@@ -327,17 +264,11 @@ const secondGen = ['Chikorita', 'Cyndaquil', 'Totodile']
 const joined = firstGen.concat(secondGen) // retorna um novo array
 ```
 
-</Code>
-
-
 ---
 
 # Spread Operator - Arrays
 
 ## ES6
-
-<Code>
-
 
 ```js
 const firstGen = ['Bulbasaur', 'Charmander', 'Squirtle']
@@ -349,15 +280,9 @@ const joined = [...firstGen, ...secondGen]
 console.log(joined)
 ```
 
-</Code>
-
-
 ---
 
 # Spread Operator - Functions
-
-<Code>
-
 
 ```js
 const firstGen = [1, 4, 7]
@@ -373,17 +298,11 @@ add(firstGen[0], firstGen[1], firstGen[2])
 add(secondGen[0], secondGen[1], secondGen[2])
 ```
 
-</Code>
-
-
 ---
 
 # Spread Operator - Functions
 
 ## ES6
-
-<Code>
-
 
 ```js
 const firstGen = [1, 4, 7]
@@ -398,9 +317,6 @@ function add(num1, num2, num3) {
 add(...firstGen)
 add(...secondGen)
 ```
-
-</Code>
-
 
 ---
 
